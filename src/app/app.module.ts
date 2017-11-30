@@ -15,6 +15,7 @@ import { PartenaireComponent } from './partenaire/partenaire.component';
 import { SocieteComponent } from './societe/societe.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProduitComponent } from './produit/produit.component';
+import { PanelpcComponent } from './panelpc/panelpc.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ProduitComponent } from './produit/produit.component';
     PartenaireComponent,
     SocieteComponent,
     CompetenceComponent,
-    ProduitComponent
+    ProduitComponent,
+    PanelpcComponent
   ],
   imports: [
     BrowserModule,

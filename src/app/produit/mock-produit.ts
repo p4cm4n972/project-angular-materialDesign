@@ -5,7 +5,7 @@ export const PRODUIT: IProduit[] = [
       name: 'Panel PC & Station de travail',
       imgUrl: '../../assets/img/produit/panel-pc.jpg',
       color: 'rgba(2, 179, 228, .8)',
-      page: '/panel-pc',
+      page: '/panelpc',
       classe: 'informatique industrielle',
       seller: [{
         'sellerName': 'nexcom',
