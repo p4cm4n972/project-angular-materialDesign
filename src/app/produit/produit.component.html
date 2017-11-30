@@ -1,0 +1,28 @@
+<!--Card-->
+<div class="container">
+  <div class="row">
+
+    <div class="card col-md-3 col-lg-3" *ngFor="let prod of produit">
+      
+      <!--Card image-->
+      <div class="view hm-white-slight waves-light" mdbRippleRadius>
+            <img [src]='prod.imgUrl' class="img" [alt]='prod.name' height="200">
+            <a [routerLink]='prod.page'>
+              <div class="mask"></div>
+            </a>
+          </div>
+    
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <p class="card-title text-center">{{prod.name}}</p>
+          <!--Text-->
+          <p class="card-text text-center"><a [routerLink]='this.prod.seller[i].sellerPage' *ngFor='let img of this.prod.seller, index as i'><img  [src]='prod.seller[i].sellerUrl' width="80px"></a></p>
+          
+        </div>
+        
+      </div>
+    </div>
+    </div>
+    <!--/.Card-->   
+    
