@@ -1,8 +1,9 @@
 export class IProduit {
-    name: string;
-    imgUrl: string;
-    color: string;
-    page: string;
-    classe: string;
-    seller: [{sellerName: string, sellerUrl: string, sellerPage: string}];
+    name: any;
+    imgUrl: any;
+    color: any;
+    page: any;
+    classe: any;
+    seller: [{sellerName: any, sellerUrl: any, sellerPage: any}];
+    article: [{articleName: any, articleUrl: any, articleSeller: any}];
 }

@@ -4,7 +4,6 @@ import { IProduit } from './produit';
 import { PRODUIT } from './mock-produit';
 
 @Component({
-  selector: 'app-produit',
   templateUrl: './produit.component.html',
   styleUrls: ['./produit.component.scss']
 })

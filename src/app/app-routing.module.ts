@@ -5,7 +5,7 @@ import { PartenaireComponent } from './partenaire/partenaire.component';
 import { SocieteComponent } from './societe/societe.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProduitComponent } from './produit/produit.component';
-import { PanelpcComponent } from './panelpc/panelpc.component';
+import { ProduitDetailComponent } from './produit-detail/produit-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'societe', component: SocieteComponent },
   { path: 'competence', component: CompetenceComponent },
   { path: 'produit', component: ProduitComponent },
-  { path: 'panelpc', component: PanelpcComponent }
+  { path: 'produit/:page', component: ProduitDetailComponent }
 ];
 
 @NgModule({

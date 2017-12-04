@@ -7,7 +7,7 @@
       <!--Card image-->
       <div class="view hm-white-slight waves-light" mdbRippleRadius>
             <img [src]='prod.imgUrl' class="img" [alt]='prod.name' height="200">
-            <a [routerLink]='prod.page'>
+            <a [routerLink]="['/produit',prod.page]">
               <div class="mask"></div>
             </a>
           </div>
@@ -17,7 +17,7 @@
           <!--Title-->
           <p class="card-title text-center">{{prod.name}}</p>
           <!--Text-->
-          <p class="card-text text-center"><a [routerLink]='this.prod.seller[i].sellerPage' *ngFor='let img of this.prod.seller, index as i'><img  [src]='prod.seller[i].sellerUrl' width="80px"></a></p>
+          <p class="card-text text-center"><a [routerLink]="['/produit',this.prod.seller[i].sellerPage]" *ngFor='let img of this.prod.seller, index as i'><img  [src]='prod.seller[i].sellerUrl' width="80px"></a></p>
           
         </div>
         
