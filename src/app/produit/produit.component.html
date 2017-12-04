@@ -5,7 +5,7 @@
     <div class="card col-md-3 col-lg-3" *ngFor="let prod of produit">
       
       <!--Card image-->
-      <div class="view hm-white-slight waves-light" mdbRippleRadius>
+      <div class="view hm-zoom" mdbRippleRadius>
             <img [src]='prod.imgUrl' class="img" [alt]='prod.name' height="200">
             <a [routerLink]="['/produit',prod.page]">
               <div class="mask"></div>

@@ -15,7 +15,7 @@ export class PartenaireService {
   constructor( private _http: HttpClient) { }
 
   getPartenaire(): Observable<IPartenaire[]> {
-    return this._http.get<IPartenaire[]>(this._partenaireUrl)
+    return this._http.get<IPartenaire[]>(this._partenaireUrl);
 }
 
 

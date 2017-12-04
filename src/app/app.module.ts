@@ -16,7 +16,7 @@ import { SocieteComponent } from './societe/societe.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProduitComponent } from './produit/produit.component';
 import { ProduitDetailComponent } from './produit-detail/produit-detail.component';
-
+import { ProduitService } from './produit.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { ProduitDetailComponent } from './produit-detail/produit-detail.componen
     AppRoutingModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [PartenaireService],
+  providers: [PartenaireService, ProduitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
