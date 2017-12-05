@@ -17,6 +17,7 @@ import { CompetenceComponent } from './competence/competence.component';
 import { ProduitComponent } from './produit/produit.component';
 import { ProduitDetailComponent } from './produit-detail/produit-detail.component';
 import { ProduitService } from './produit.service';
+import { PartenaireDetailComponent } from './partenaire-detail/partenaire-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProduitService } from './produit.service';
     CompetenceComponent,
     ProduitComponent,
     ProduitDetailComponent,
+    PartenaireDetailComponent,
   ],
   imports: [
     BrowserModule,

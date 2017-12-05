@@ -23,6 +23,8 @@ export class ProduitService {
   getProduitList(id: string): Observable<IProduit> {
     return this.getProduit()
     .map((produit: IProduit[]) => produit.find(p => p.page === id ))
+    .do(data => console.log(data))
+    .catch(this.handleError);
 }
 
 getProduitSeller(id: string): Observable<IProduit> {

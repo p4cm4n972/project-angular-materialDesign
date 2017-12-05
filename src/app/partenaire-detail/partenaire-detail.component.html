@@ -1,0 +1,21 @@
+  <div class="container">
+    <button type="button" class="btn btn-warning waves-light" mdbRippleRadius (click)='onBack()'>
+      <i class="material-icons">arrow_back</i>
+    </button>
+    
+    <div class="row">
+        <div class="col-md-12" *ngFor="let art of partenaire">
+          <h4 class="card-title">{{art.categories}}</h4>
+            <div class="row">
+            <div class="col-md-3" *ngFor="let cat of art.modele, index as i" class="card-text">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text text-center">{{art.modele[i].name}}</p>
+                  <img [src]='art.modele[i].pictures' class="img-fluid"></div></div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    

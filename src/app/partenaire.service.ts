@@ -17,7 +17,12 @@ export class PartenaireService {
   getPartenaire(): Observable<IPartenaire[]> {
     return this._http.get<IPartenaire[]>(this._partenaireUrl);
 }
-
+getPartenaireDetail(id: string): Observable<IPartenaire> {
+  return this.getPartenaire()
+  .map((partenaire: IPartenaire[]) => partenaire.find(p => p.partenaireName === id ))
+  .do(data => console.log(data))
+  .catch(this.handleError);
+}
 
 
 private handleError(err: HttpErrorResponse) {

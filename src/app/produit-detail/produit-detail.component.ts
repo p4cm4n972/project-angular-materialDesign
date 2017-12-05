@@ -13,7 +13,7 @@ import { ProduitService } from '../produit.service';
 })
 export class ProduitDetailComponent implements OnInit {
   errorMessage: string;
-  produit: IProduit;
+  produit;
 
   constructor( private _route: ActivatedRoute,
     private _router: Router,
@@ -28,7 +28,7 @@ export class ProduitDetailComponent implements OnInit {
   }
     getProduitList(id: string) {
       this._produitService.getProduitList(id).subscribe(
-        produit => this.produit = produit,
+        produit => this.produit = produit.article,
         error => this.errorMessage = <any>error);
     }
     onBack(): void {
