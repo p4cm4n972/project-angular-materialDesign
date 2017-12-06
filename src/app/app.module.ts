@@ -18,6 +18,7 @@ import { ProduitComponent } from './produit/produit.component';
 import { ProduitDetailComponent } from './produit-detail/produit-detail.component';
 import { ProduitService } from './produit.service';
 import { PartenaireDetailComponent } from './partenaire-detail/partenaire-detail.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PartenaireDetailComponent } from './partenaire-detail/partenaire-detail
     ProduitComponent,
     ProduitDetailComponent,
     PartenaireDetailComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

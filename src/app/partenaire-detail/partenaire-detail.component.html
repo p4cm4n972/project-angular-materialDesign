@@ -8,21 +8,21 @@
           <h4 class="card-title">{{art.categories}}</h4>
           <hr>
             <div class="row">
-            <div class="col-md-3" *ngFor="let cat of art.modele, index as i" class="card-text">
-              <div class="card">
+            <div class="col-md-3 " *ngFor="let cat of art.modele, index as i" class="card-text">
+              <div class="card ">
                 <div class="card-body">
                   <p class="card-text text-center">{{art.modele[i].name}}</p>
-                  <img [src]='art.modele[i].pictures' class="img-fluid">
+                  <img [src]='art.modele[i].pictures' class="img-fluid mx-auto">
                 </div>
                 
                   <!--DROPDOWN-->
                   <div class="btn-group mx-auto" dropdown>
-                      <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle waves-light" mdbRippleRadius>
+                      <button dropdownToggle type="button" class="btn btn-blue-grey dropdown-toggle waves-light" mdbRippleRadius>
                           series
                       </button>
                   
                       <div class="dropdown-menu dropdown-primary">
-                          <a *ngFor="let serie of art.modele[i].series, index as x" class="dropdown-item" href={{art.modele[i].series[x].liens}}>{{art.modele[i].series[x].modeles}}</a>
+                          <a *ngFor="let serie of art.modele[i].series, index as x" class="dropdown-item" href={{art.modele[i].series[x].liens}} target="_blank" onclick="window.open(this.href,'child','height=800,width=1200,top=20%'); return false;">{{art.modele[i].series[x].modeles}}</a>
                           
                       </div>
                   </div>

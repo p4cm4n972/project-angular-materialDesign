@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PartenaireService } from '../partenaire.service';
-
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-partenaire-detail',
@@ -13,7 +13,8 @@ export class PartenaireDetailComponent implements OnInit {
   partenaire;
   constructor( private _route: ActivatedRoute,
     private _router: Router,
-    private _partenaireService: PartenaireService) { }
+    private _partenaireService: PartenaireService,
+    private location: Location) { }
 
   ngOnInit() {
     console.log('INIT PART detail');
@@ -27,6 +28,6 @@ export class PartenaireDetailComponent implements OnInit {
     error => this.errorMessage = <any>error);
   }
   onBack(): void {
-    this._router.navigate(['/partenaires']);
+    this.location.back();
   }
 }

@@ -1,0 +1,21 @@
+
+.intro-2 {
+    background: url("../../assets/img/facade01.jpg")no-repeat;
+    background-size: cover;
+}
+
+.md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+h6 {
+    line-height: 1.7;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1150px; 
+    } 
+}
