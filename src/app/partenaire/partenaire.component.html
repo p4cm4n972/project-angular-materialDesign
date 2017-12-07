@@ -2,7 +2,7 @@
  <h1 red-text>cliquer sur ORING</h1>
  <div class="container">
     <div class="row ">
-      <div class="col-md-3" *ngFor="let part of partList">
+      <div class="col-md-3 animated flipInX" *ngFor="let part of partList">
         <a [routerLink]="part.partenaireName"><img [src]="part.partImgUrl" [alt]="part.partenaireName" class="img-fluid"></a>
       </div>
     </div>

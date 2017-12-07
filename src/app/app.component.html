@@ -1,8 +1,6 @@
 <mdb-navbar SideClass="navbar  navbar-expand-lg navbar-inverse fixed-top scrolling-navbar">
     <logo>
-        <a class="navbar-brand" [routerLink]="['/']">
-          <img src="../../assets/img/logo.png" height="30" alt="">
-        </a>
+        <span class="navbar-brand orange-text font-weight-normal font-italic">Depuis 1988</span>
       </logo>
       <links>
         <form class="form-inline waves-light waves-light ml-auto" mdbRippleRadius>
@@ -50,7 +48,11 @@
 
 
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark blue darken-3 scrolling-navbar">
-    
+    <logo>
+        <a class="navbar-brand" [routerLink]="['/']">
+          <img src="../../assets/img/logo.png" height="30" alt="">
+        </a>
+      </logo>
     <links>
       <div class="navbar-nav ">
         <a class="nav-item nav-link active waves-light" [routerLink]="['/home']" mdbRippleRadius>ACCUEIL

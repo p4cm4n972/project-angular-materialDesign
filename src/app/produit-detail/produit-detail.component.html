@@ -8,7 +8,7 @@
       <logo><span class="navbar-brand">{{produit.name}}</span></logo>
   </mdb-navbar>
   <div class="row">
-    <div class="card col-md-3" *ngFor="let art of produit.article">
+    <div class="card col-md-3 animated fadeInUp" *ngFor="let art of produit.article">
       <div class="view hm-zoom">
         <a href={{art.articleHref}} target="_blank" onclick="window.open(this.href,'child','height=800,width=1200,top=20%'); return false;"><img [src]='art.articleUrl' class=" mx-auto d-block" style="max-width:150px" height="auto"></a>
       </div>
